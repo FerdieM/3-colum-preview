@@ -1,0 +1,125 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Lora:wght@400;500;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Lora:wght@400;500;600&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Lora', serif; */
+
+/* -------------- */
+/* Variables */
+
+:root {
+  --bright_orange: hsl(31, 77%, 52%);
+  --dark_cyan: hsl(184, 100%, 22%);
+  --very_dark_cyan: hsl(179, 100%, 13%);
+}
+
+/*---- Resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 93.75%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+article {
+  padding: 1rem;
+  background-color: aquamarine;
+  width: 90%;
+  background-color: var(--dark_cyan);
+  margin-left: 2rem;
+}
+
+article h2 {
+  text-transform: uppercase;
+  padding: 1rem 0 1rem;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 400;
+}
+
+article img {
+  display: block;
+  height: 1.5rem;
+}
+
+article button {
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  border: none;
+  color: var(--dark_cyan);
+  font-weight: 400;
+}
+
+.article_desc {
+  padding: 1rem 1rem 1rem 0;
+  line-height: 1.5;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+article:first-of-type {
+  background-color: var(--bright_orange);
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+article:last-of-type {
+  background-color: var(--very_dark_cyan);
+  border-radius: 0 0 0.3rem 0.3rem;
+}
+
+article:first-of-type button {
+  color: var(--bright_orange);
+}
+
+article:last-of-type button {
+  color: var(--very_dark_cyan);
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  article {
+    margin-left: 0;
+    height: 50vh;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  article img {
+    width: 2rem;
+  }
+
+  .article_desc {
+    height: 12rem;
+  }
+
+  article:first-of-type {
+    border-radius: 0.3rem 0 0 0.3rem;
+  }
+
+  article:last-of-type {
+    border-radius: 0 0.3rem 0.3rem 0;
+  }
+}
