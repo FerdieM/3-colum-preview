@@ -57,7 +57,8 @@ article h2 {
 
 article img {
   display: block;
-  height: 1.5rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 article button {
@@ -111,7 +112,7 @@ article:last-of-type button {
   }
 
   article img {
-    width: 2rem;
+    width: 2.5rem;
   }
 
   .article_desc {
