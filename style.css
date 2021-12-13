@@ -43,7 +43,7 @@ html {
 }
 
 article {
-  padding: 1rem 2rem 5rem 2rem;
+  padding: 3rem;
   width: 90%;
   background-color: var(--dark_cyan);
 }
@@ -102,7 +102,7 @@ article:last-of-type button {
   }
 
   article {
-    margin-left: 0;
+    padding: 2rem;
     height: 50vh;
     width: 15rem;
     display: flex;
